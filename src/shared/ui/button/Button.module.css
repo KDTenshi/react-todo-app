@@ -1,0 +1,48 @@
+.Button {
+  border: 2px solid #41444b;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: #41444b;
+  background: #f5f5f7;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Button:hover {
+  background: #b7b7b7;
+}
+.Button_Red {
+  border: 2px solid #41444b;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: #41444b;
+  background: #f5f5f7;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Button_Red:hover {
+  background: #ff8080;
+}
+.Button_Blue {
+  border: 2px solid #41444b;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: #41444b;
+  background: #f5f5f7;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Button_Blue:hover {
+  background: #a2d2df;
+}
+.Button_Green {
+  border: 2px solid #41444b;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: #41444b;
+  background: #f5f5f7;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Button_Green:hover {
+  background: #a5b68d;
+}/*# sourceMappingURL=Button.module.css.map */

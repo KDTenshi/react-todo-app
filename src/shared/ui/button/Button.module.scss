@@ -1,0 +1,43 @@
+@use "../../style/colors" as c;
+
+@mixin Button {
+  border: 2px solid c.$black;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: c.$black;
+  background: c.$white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Button {
+  @include Button();
+
+  &:hover {
+    background: c.$grey;
+  }
+
+  &_Red {
+    @include Button();
+
+    &:hover {
+      background: c.$red;
+    }
+  }
+
+  &_Blue {
+    @include Button();
+
+    &:hover {
+      background: c.$blue;
+    }
+  }
+
+  &_Green {
+    @include Button();
+
+    &:hover {
+      background: c.$green;
+    }
+  }
+}

@@ -1,19 +1,26 @@
 import { FC } from "react";
 import style from "./Task.module.css";
+import { TTask } from "../../../shared/types/types";
+import { getDateString } from "../../../shared/utils/getDateString";
+import Button from "../../../shared/ui/button/Button";
 
-const Task: FC = () => {
+interface TaskProps {
+  task: TTask;
+}
+
+const Task: FC<TaskProps> = ({ task }) => {
   return (
     <div className={style.Task}>
-      <h2 className={style.Title}>Task title goes here</h2>
-      <p className={style.Date}>10.03.25 | 10:25am</p>
+      <h2 className={style.Title}>{task.title}</h2>
+      <p className={style.Date}>{getDateString(task.date)}</p>
       <div className={style.Controls}>
-        <button className={style.Button}>STP</button>
-        <button className={style.Button}>STR</button>
-        <button className={style.Button}>COM</button>
+        <Button color="blue">STP</Button>
+        <Button color="blue">STR</Button>
+        <Button color="green">COM</Button>
       </div>
       <div className={style.Actions}>
-        <button className={style.Button}>DEL</button>
-        <button className={style.Button}>EDT</button>
+        <Button color="blue">EDT</Button>
+        <Button color="red">DEL</Button>
       </div>
     </div>
   );
