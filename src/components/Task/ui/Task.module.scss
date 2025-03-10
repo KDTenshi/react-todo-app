@@ -1,0 +1,52 @@
+@use "../../../shared/style/colors" as c;
+@import "../../../shared/style/mixins";
+
+.Task {
+  padding: 25px 50px;
+  background: c.$white;
+  border: 5px solid c.$black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.Title {
+  font-size: 25px;
+  color: c.$black;
+  font-weight: bold;
+}
+
+.Date {
+  font-size: 20px;
+  color: c.$black;
+}
+
+.Controls {
+  display: flex;
+  gap: 20px;
+}
+
+.Actions {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Button {
+  border: 2px solid c.$black;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: c.$black;
+  background: c.$white;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: c.$grey;
+  }
+}
