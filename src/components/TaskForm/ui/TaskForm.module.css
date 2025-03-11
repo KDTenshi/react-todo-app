@@ -1,0 +1,16 @@
+.Form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.Input {
+  background: #f5f5f7;
+  border: 2px solid #41444b;
+  padding: 5px 15px;
+  font-size: 20px;
+  color: #41444b;
+  border-radius: 10px;
+  width: 450px;
+}/*# sourceMappingURL=TaskForm.module.css.map */

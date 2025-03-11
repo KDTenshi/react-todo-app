@@ -1,0 +1,19 @@
+@use "../../../shared/style/colors" as c;
+@import "../../../shared/style/mixins";
+
+.Form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.Input {
+  background: c.$white;
+  border: 2px solid c.$black;
+  padding: 5px 15px;
+  font-size: 20px;
+  color: c.$black;
+  border-radius: 10px;
+  width: 450px;
+}

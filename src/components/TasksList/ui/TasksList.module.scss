@@ -1,0 +1,10 @@
+@use "../../../shared/style/colors" as c;
+@import "../../../shared/style/mixins";
+
+.List {
+  background: c.$white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 75px;
+  gap: 20px;
+}
