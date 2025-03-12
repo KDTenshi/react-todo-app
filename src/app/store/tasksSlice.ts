@@ -43,7 +43,13 @@ export const tasksSlice = createSlice({
 
       state.tasks = tasks;
     },
+    editTask: (state, action: PayloadAction<{ title: string; id: string }>) => {
+      const { title, id } = action.payload;
+      const toEdit = state.tasks.find((task) => task.id === id);
+
+      if (toEdit) toEdit.title = title;
+    },
   },
 });
 
-export const { addTask, changeTaskStatus, deleteTask, setTasks } = tasksSlice.actions;
+export const { addTask, changeTaskStatus, deleteTask, setTasks, editTask } = tasksSlice.actions;

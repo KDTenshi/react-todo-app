@@ -52,3 +52,18 @@
   flex-direction: column;
   gap: 20px;
 }
+
+.Edit {
+  display: flex;
+  gap: 10px;
+}
+
+.Input {
+  font-size: 20px;
+  color: c.$black;
+  border: 3px solid c.$black;
+  padding: 5px 15px;
+  border-radius: 10px;
+  width: 650px;
+  background: c.$white;
+}
