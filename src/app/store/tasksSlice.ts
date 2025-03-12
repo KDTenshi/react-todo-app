@@ -38,7 +38,12 @@ export const tasksSlice = createSlice({
 
       state.tasks = state.tasks.filter((task) => task.id !== id);
     },
+    setTasks: (state, action: PayloadAction<{ tasks: TTask[] }>) => {
+      const { tasks } = action.payload;
+
+      state.tasks = tasks;
+    },
   },
 });
 
-export const { addTask, changeTaskStatus, deleteTask } = tasksSlice.actions;
+export const { addTask, changeTaskStatus, deleteTask, setTasks } = tasksSlice.actions;

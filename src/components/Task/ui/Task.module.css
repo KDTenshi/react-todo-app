@@ -20,6 +20,22 @@
   color: #41444b;
 }
 
+.Status {
+  font-size: 25px;
+}
+
+.Black {
+  color: #41444b;
+}
+
+.Blue {
+  color: #a2d2df;
+}
+
+.Green {
+  color: #a5b68d;
+}
+
 .Controls {
   display: flex;
   gap: 20px;

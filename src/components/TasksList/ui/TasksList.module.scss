@@ -8,3 +8,21 @@
   padding: 25px 75px;
   gap: 20px;
 }
+
+.Empty {
+  align-self: center;
+  width: 75vw;
+  background: c.$white;
+  border: 5px solid c.$black;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 125px 0;
+}
+
+.Title {
+  font-size: 25px;
+  color: c.$black;
+  font-weight: bold;
+}
