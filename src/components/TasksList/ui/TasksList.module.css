@@ -22,4 +22,31 @@
   font-size: 25px;
   color: #41444b;
   font-weight: bold;
+}
+
+.Filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.Filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.Filter label {
+  font-size: 20px;
+  color: #41444b;
+}
+.Filter select {
+  font-size: 20px;
+  border: 2px solid #41444b;
+  background: #f5f5f7;
+  color: #41444b;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }/*# sourceMappingURL=TasksList.module.css.map */

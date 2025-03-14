@@ -26,3 +26,32 @@
   color: c.$black;
   font-weight: bold;
 }
+
+.Filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.Filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  & label {
+    font-size: 20px;
+    color: c.$black;
+  }
+
+  & select {
+    font-size: 20px;
+    border: 2px solid c.$black;
+    background: c.$white;
+    color: c.$black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
